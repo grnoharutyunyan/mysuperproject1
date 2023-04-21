@@ -1,0 +1,15 @@
+#--------------------------------------
+# Github Action Part -1  -> Basics
+#--------------------------------------
+
+name: My-GitHubActions-Basics
+
+on:
+  push:
+      branches:
+         -master
+
+ jobs:
+    build:
+    
+    
