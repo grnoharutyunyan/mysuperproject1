@@ -11,19 +11,21 @@ on:
 
  jobs:
     my_testing:
+      runs-on: ubuntu-latest
     
-    runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/chekout@v1
-    - name: Run a one-line script
-      run:
-          echo Add other actions to build,
-          echo test,and deploy your project
+    - name: Print Hello Message
+      run:  echo "Add other actions to build"
+          
+          
           
     
     my_deploy:
       runs-on: ubuntu-latest
+      
       steps:
+      - name: Print Hello Message
+         run: echo "Hello World From Deploy Job"
     
     
