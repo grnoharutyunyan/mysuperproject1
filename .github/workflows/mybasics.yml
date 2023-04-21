@@ -2,27 +2,18 @@
 # Github Action Part -1  -> Basics
 #--------------------------------------
 name: MyGitHubActionsBasics
-
 on:
   push:
       branches:
          -master
-
  jobs:
     my_testing:
-      runs-on: ubuntu-latest
-    
-    
+      runs-on: ubuntu-latest  
     steps:
     - name: Print Hello Message
-      run:  echo "Add other actions to build"
-          
-          
-          
-    
+      run:  echo "Add other actions to build"        
     my_deploy:
       runs-on: ubuntu-latest
-      
       steps:
       - name: Print Hello Message
          run: echo "Hello World From Deploy Job"
